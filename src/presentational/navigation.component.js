@@ -6,12 +6,12 @@ import 'bootstrap/dist/css/bootstrap.css'; // tu brak zdefiniowanej klasy .navba
 // poniższa wersja <Navigation> ma usuniętę dwie klasy bootstrapowe, które chowały menu; oryginalny plik z kursu wykomentowany poniżej
 const Navigation = props => (
     <div>
-        <nav>
+        <nav className='navbar-default'>
             <div className='container-fluid'>
                 <div className='navbar-header'>
                     <Link className='navbar-brand' to='/'>Państwa.js</Link>
                 </div>
-                <div>
+                <div className='navbar-collapse'>
                     <ul className='nav navbar-nav'>
                         <li><Link to='/countries'>Countries</Link></li>
                         <li><Link to='/continents'>Continents</Link></li>
@@ -29,12 +29,12 @@ const Navigation = props => (
 /*
 const Navigation = props => (
     <div>
-        <nav className='navbar navbar-default'> // -------------------- tu usunięty className --------------------
+        <nav className='navbar navbar-default'> // -------------------- tu usunięty className='navbar' --------------------
             <div className='container-fluid'>
                 <div className='navbar-header'>
                     <Link className='navbar-brand' to='/'>Państwa.js</Link>
                 </div>
-                <div className='collapse navbar-collapse'> // -------------------- tu usunięty className --------------------
+                <div className='collapse navbar-collapse'> // -------------------- tu usunięty className='collapse' --------------------
                     <ul className='nav navbar-nav'>
                         <li><Link to='/countries'>Countries</Link></li>
                         <li><Link to='/continents'>Continents</Link></li>
